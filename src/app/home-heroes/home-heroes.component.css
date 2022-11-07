@@ -1,0 +1,21 @@
+h1{
+    size: 2rem;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: midnightblue;
+}
+
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 5px 1px 0;
+    border: 2px solid midnightblue;
+    border-radius: 5px;
+    margin: 10px;
+}
+  
+a:link {
+    color: #265301;
+}
