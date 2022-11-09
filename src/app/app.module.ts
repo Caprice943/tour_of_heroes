@@ -7,6 +7,7 @@ import { DetailsHeroesComponent } from './details-heroes/details-heroes.componen
 import { ListHeroesComponent } from './list-heroes/list-heroes.component';
 import { ClassementHeroesComponent } from './classement-heroes/classement-heroes.component';
 import { HomeHeroesComponent } from './home-heroes/home-heroes.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,13 @@ import { HomeHeroesComponent } from './home-heroes/home-heroes.component';
     DetailsHeroesComponent,
     ListHeroesComponent,
     ClassementHeroesComponent,
-    HomeHeroesComponent
+    HomeHeroesComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
