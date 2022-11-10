@@ -1,15 +1,27 @@
-table , tr , td th{
+div{
+    margin: 20px;
+}
+a {
+    outline: none;
+    text-decoration: none;
     border-style: none;
-}
-
-th{
-    background-color: cornflowerblue;
+    background-color: grey;
+    border-radius: 5px;
+    color: black;
     padding: 10px;
+    
 }
 
+a:hover{
+    background-color: midnightblue;
+    color: white;
+} 
 
-td{
+
+.id {
+    background-color: cornflowerblue;
+}
+
+.nom{
     background-color: rgb(205, 205, 205);
-    padding-right: 200px;
-
 }

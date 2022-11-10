@@ -1,9 +1,9 @@
 <div>
-    <p>  Details</p>
+    <h2> {{nomHeroes | uppercase}} Details</h2>  
 
-    <p> id : </p>
+    <p> id :</p>
     <label> Hero name : </label>
-    <input type="text" />
+    <input type="text" [(ngModel)]="nomHeroes"/>
     <br/>
     <br/>
     <button routerLink="/classementHeroes">Back </button>

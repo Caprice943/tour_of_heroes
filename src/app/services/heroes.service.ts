@@ -35,4 +35,8 @@ export class HeroesService {
   classementHeroes() : Heroes [] {
     return this.podium;
   }
+
+  
+
+
 }
