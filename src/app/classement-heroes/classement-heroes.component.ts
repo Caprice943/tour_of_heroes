@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Heroes } from '../model/heroes.model';
+import { HeroesService } from '../services/heroes.service';
 
 @Component({
   selector: 'app-classement-heroes',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassementHeroesComponent implements OnInit {
 
-  constructor() { }
+onClickButton(nomHeroes : string) {
+  this.clickHeroe.emit({heroe : this.heroe});
+}
+  
+@Output() clickHeroe =new EventEmitter<{ heroe: Heroes}>();
+ podium : Heroes[] | undefined ;
+ heroeService = new HeroesService;
+ heroe! : Heroes;
+ 
+  constructor() { this.podium = this.heroeService.classementHeroes();}
 
   ngOnInit(): void {
+     
   }
+  
+
+  
 
 }
+
+
+

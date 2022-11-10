@@ -1,0 +1,17 @@
+div{
+    margin: 25px;
+    display: inline;
+}
+
+button{
+    padding: 10px;
+    background-color: midnightblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+
+}
+
+h3{
+    padding-top: 10px;
+}

@@ -1,1 +1,8 @@
-<p>classement-heroes works!</p>
+<h3>Top Heroes</h3>
+
+<div>
+    <div *ngFor="let heroe of podium">
+        <button routerLink="/detailsHeroes" > {{heroe.nomHeroes}}</button>
+    </div>
+</div>
+
