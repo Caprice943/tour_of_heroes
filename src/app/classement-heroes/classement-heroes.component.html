@@ -2,7 +2,7 @@
 
 <div>
     <div *ngFor="let heroe of podium">
-        <button routerLink="/detailsHeroes" > {{heroe.nomHeroes}}</button>
+        <button [routerLink]="['/detailsHeroes', heroe.idHeroes]" > {{heroe.nomHeroes}}</button>
     </div>
 </div>
 

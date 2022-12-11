@@ -36,6 +36,23 @@ export class HeroesService {
     return this.podium;
   }
 
+  consulterHeroe(id: number): Heroes {
+    return this.heroes.find((h) => h.idHeroes == id)!;
+  }
+
+  supprimerHeroe(prod: Heroes) {
+    //supprimer le produit prod du tableau produits
+    const index = this.heroes.indexOf(prod, 0);
+    if (index > -1) {
+      this.heroes.splice(index, 1);
+    }
+  }
+
+  updateNameHeroe(h:Heroes){
+    this.supprimerHeroe(h);
+    this.heroes.push(h);
+  }
+
   
 
 

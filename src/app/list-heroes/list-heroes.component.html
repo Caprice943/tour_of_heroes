@@ -2,5 +2,5 @@
 
 <div *ngFor="let heroe of Singleheroe">
     <a class="id">{{heroe.idHeroes}}</a>
-    <a class="nom" routerLink="/detailsHeroes">{{heroe.nomHeroes}}</a>
+    <a class="nom" [routerLink]="['/detailsHeroes',heroe.idHeroes]">{{heroe.nomHeroes}}</a>
 </div>       
