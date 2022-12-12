@@ -40,17 +40,22 @@ export class HeroesService {
     return this.heroes.find((h) => h.idHeroes == id)!;
   }
 
-  supprimerHeroe(prod: Heroes) {
-    //supprimer le produit prod du tableau produits
-    const index = this.heroes.indexOf(prod, 0);
+  supprimerHeroe(her: Heroes) {
+    const index = this.heroes.indexOf(her, 0);
     if (index > -1) {
       this.heroes.splice(index, 1);
     }
   }
 
+  ajouterHeroe(h : Heroes){
+    return this.heroes.push(h);
+
+  }
+
   updateNameHeroe(h:Heroes){
     this.supprimerHeroe(h);
-    this.heroes.push(h);
+    this.ajouterHeroe(h);
+   
   }
 
   

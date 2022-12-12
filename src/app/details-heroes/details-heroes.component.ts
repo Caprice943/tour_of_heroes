@@ -12,7 +12,7 @@ import { HeroesService } from '../services/heroes.service';
 export class DetailsHeroesComponent implements OnInit {
 
   currentHeroes = new Heroes();
-  constructor(private activatedRoute: ActivatedRoute,private router :Router, private heroeService : HeroesService) {}
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private heroeService : HeroesService) {}
 
   ngOnInit(): void {
    //console.log(this.activatedRoute.snapshot.params['id']);
